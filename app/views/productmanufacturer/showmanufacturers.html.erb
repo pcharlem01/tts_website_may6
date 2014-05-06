@@ -1,0 +1,16 @@
+<h1>Productmanufacturer#showmanufacturers</h1>
+Doing a where clause. Number of results: <%=@manufacturers.count%>
+<Br><Br>
+
+<%if @manufacturers.count == 0 %>
+	sorry, no results. try again
+
+<%else%>
+
+	<%@manufacturers.each do |manu|%>
+
+	<%=manu.name%>
+
+	<%end%>
+
+<%end%>
